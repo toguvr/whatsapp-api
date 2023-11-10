@@ -1,21 +1,55 @@
-# Use a imagem oficial do Node.js como base
 FROM node:18
 
-# Defina o diretório de trabalho no contêiner
 WORKDIR /app
 
-# Copie package.json e package-lock.json para o contêiner
 COPY package*.json ./
 
-# Instale as dependências da aplicação
 RUN npm install
 
-# Copie o restante do código da sua aplicação para o contêiner
+# Add Puppeteer dependencies
+RUN apt-get update && apt-get install -y \
+  gconf-service \
+  libasound2 \
+  libatk1.0-0 \
+  libc6 \
+  libcairo2 \
+  libcups2 \
+  libdbus-1-3 \
+  libexpat1 \
+  libfontconfig1 \
+  libgcc1 \
+  libgdk-pixbuf2.0-0 \
+  libglib2.0-0 \
+  libgtk-3-0 \
+  libnspr4 \
+  libpango-1.0-0 \
+  libpangocairo-1.0-0 \
+  libstdc++6 \
+  libx11-6 \
+  libx11-xcb1 \
+  libxcb1 \
+  libxcomposite1 \
+  libxcursor1 \
+  libxdamage1 \
+  libxext6 \
+  libxfixes3 \
+  libxi6 \
+  libxrandr2 \
+  libxrender1 \
+  libxss1 \
+  libxtst6 \
+  ca-certificates \
+  fonts-liberation \
+  libappindicator1 \
+  libnss3 \
+  lsb-release \
+  xdg-utils \
+  wget
+
 COPY . .
 
 RUN npm run build
-# Exponha a porta em que a aplicação Nest.js estará rodando
+
 EXPOSE 3333
 
-# Defina o comando para iniciar sua aplicação Nest.js no modo de produção
 CMD ["npm", "run", "start:prod"]

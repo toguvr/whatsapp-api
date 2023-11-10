@@ -30,7 +30,7 @@ async function bootstrap() {
     logQR: true, // Logs QR automatically in terminal
     browserWS: '', // If u want to use browserWSEndpoint
     browserArgs: [], // Parameters to be added into the chrome browser instance
-    puppeteerOptions: {}, // Will be passed to puppeteer.launch
+    puppeteerOptions: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }, // Will be passed to puppeteer.launch
     disableWelcome: false, // Option to disable the welcoming message which appears in the beginning
     updatesLog: true, // Logs info updates automatically in terminal
     autoClose: 60000, // Automatically closes the wppconnect only when scanning the QR code (default 60 seconds, if you want to turn it off, assign 0 or false)
