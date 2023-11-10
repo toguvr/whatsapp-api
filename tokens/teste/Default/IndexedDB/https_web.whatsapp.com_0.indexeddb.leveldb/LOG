@@ -1,0 +1,29 @@
+2023/11/09-10:29:00.742 a603 Reusing MANIFEST /Users/augustotelles/projetos/togu/whatsapp-api/tokens/teste/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/09-10:29:00.742 a603 Recovering log #126
+2023/11/09-10:29:00.747 a603 Reusing old log /Users/augustotelles/projetos/togu/whatsapp-api/tokens/teste/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000126.log 
+2023/11/09-10:29:00.747 a603 Delete type=2 #125
+2023/11/09-10:29:00.747 a603 Delete type=2 #124
+2023/11/09-10:29:11.057 8107 Level-0 table #132: started
+2023/11/09-10:29:11.066 8107 Level-0 table #132: 141688 bytes OK
+2023/11/09-10:29:11.070 8107 Delete type=0 #126
+2023/11/09-10:29:11.071 8107 Manual compaction at level-0 from '\x00-\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00.\x00\x00\x00' @ 0 : 0; will stop at '\x00.\x00\x00\x05' @ 259102 : 1
+2023/11/09-10:29:11.071 8107 Compacting 1@0 + 2@1 files
+2023/11/09-10:29:11.122 8107 Generated table #133@0: 118478 keys, 2299713 bytes
+2023/11/09-10:29:11.139 8107 Generated table #134@0: 21041 keys, 1040159 bytes
+2023/11/09-10:29:11.139 8107 Compacted 1@0 + 2@1 files => 3339872 bytes
+2023/11/09-10:29:11.143 8107 compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/11/09-10:29:11.143 8107 Delete type=2 #132
+2023/11/09-10:29:11.143 8107 Manual compaction at level-0 from '\x00.\x00\x00\x05' @ 259102 : 1 .. '\x00.\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/11/09-10:29:11.152 8107 Level-0 table #136: started
+2023/11/09-10:29:11.154 8107 Level-0 table #136: 1917 bytes OK
+2023/11/09-10:29:11.160 8107 Delete type=2 #129
+2023/11/09-10:29:11.160 8107 Delete type=2 #128
+2023/11/09-10:29:11.160 8107 Delete type=0 #131
+2023/11/09-10:29:11.161 8107 Manual compaction at level-0 from '\x00.\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00/\x00\x00\x00' @ 0 : 0; will stop at '\x00.\x00\x00\x05' @ 259220 : 0
+2023/11/09-10:29:11.161 8107 Compacting 1@0 + 2@1 files
+2023/11/09-10:29:11.209 8107 Generated table #137@0: 118478 keys, 2300619 bytes
+2023/11/09-10:29:11.226 8107 Generated table #138@0: 21039 keys, 1040167 bytes
+2023/11/09-10:29:11.226 8107 Compacted 1@0 + 2@1 files => 3340786 bytes
+2023/11/09-10:29:11.232 8107 compacted to: files[ 0 2 1 0 0 0 0 ]
+2023/11/09-10:29:11.232 8107 Delete type=2 #136
+2023/11/09-10:29:11.232 8107 Manual compaction at level-0 from '\x00.\x00\x00\x05' @ 259220 : 0 .. '\x00/\x00\x00\x00' @ 0 : 0; will stop at (end)
